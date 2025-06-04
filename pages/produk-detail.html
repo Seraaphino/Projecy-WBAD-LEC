@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk: EcoBrick - EcoInnovate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="EcoInnovate Logo" class="logo-img">
+                EcoInnovate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inovasi.html">Inovasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="komunitas.html">Komunitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <div class="ms-3 d-none d-lg-block">
+                    <a href="login.html" class="btn btn-outline-light me-2">Masuk</a>
+                    <a href="register.html" class="btn btn-primary">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-title">Detail Produk</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../index.html">Beranda</a></li>
+                            <li class="breadcrumb-item"><a href="marketplace.html">Marketplace</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">EcoBrick</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="product-image-gallery">
+                        <div class="main-image mb-3">
+                            <img src="../img/product1.jpg" alt="EcoBrick" class="img-fluid rounded" id="main-product-image">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="../img/product1.jpg" alt="EcoBrick Thumbnail 1" class="thumbnail active">
+                            <img src="../img/product1-thumb2.jpg" alt="EcoBrick Thumbnail 2" class="thumbnail">
+                            <img src="../img/product1-thumb3.jpg" alt="EcoBrick Thumbnail 3" class="thumbnail">
+                            <img src="../img/product1-thumb4.jpg" alt="EcoBrick Thumbnail 4" class="thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="product-info">
+                        <div class="product-category">Konstruksi</div>
+                        <h2 class="product-title">EcoBrick</h2>
+                        <div class="product-rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(128 ulasan)</span>
+                        </div>
+                        <p class="product-description">EcoBrick adalah batu bata inovatif yang terbuat dari campuran limbah plastik daur ulang dan bahan pengikat ramah lingkungan. Produk ini tidak hanya membantu mengurangi volume sampah plastik, tetapi juga menawarkan solusi konstruksi yang kuat, ringan, dan tahan lama.</p>
+                        <div class="product-price mb-3">
+                            <span class="current-price">Rp 15.000 / pcs</span>
+                            <span class="original-price">Rp 18.000</span>
+                            <span class="discount-badge">Diskon 17%</span>
+                        </div>
+                        <div class="product-meta mb-4">
+                            <p><strong>Penjual:</strong> <a href="seller-profile.html">EcoBrick Indonesia</a></p>
+                            <p><strong>Stok:</strong> <span class="text-success">Tersedia (500 pcs)</span></p>
+                            <p><strong>SKU:</strong> EB-001</p>
+                        </div>
+                        <div class="product-actions mb-4">
+                            <div class="quantity-selector mb-3">
+                                <label for="quantity" class="form-label">Jumlah:</label>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary quantity-minus" type="button">-</button>
+                                    <input type="number" class="form-control text-center quantity-input" id="quantity" value="1" min="1" max="500">
+                                    <button class="btn btn-outline-secondary quantity-plus" type="button">+</button>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-lg add-to-cart" data-product="EcoBrick">Tambah ke Keranjang</button>
+                            <button class="btn btn-outline-secondary btn-lg ms-2 add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-share">
+                            <span>Bagikan:</span>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs Section -->
+    <section class="product-details-tabs-section py-5 bg-light">
+        <div class="container">
+            <ul class="nav nav-tabs" id="productTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Deskripsi Lengkap</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specification-tab" data-bs-toggle="tab" data-bs-target="#specification" type="button" role="tab" aria-controls="specification" aria-selected="false">Spesifikasi</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Ulasan (128)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab" aria-controls="shipping" aria-selected="false">Pengiriman & Pengembalian</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="productTabContent">
+                <div class="tab-pane fade show active p-4" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <h4>Detail Produk EcoBrick</h4>
+                    <p>EcoBrick adalah solusi inovatif untuk mengatasi masalah sampah plastik sekaligus menyediakan bahan bangunan yang berkelanjutan. Dibuat dari limbah plastik jenis HDPE, LDPE, dan PP yang dicacah dan dicampur dengan pasir serta bahan pengikat khusus, EcoBrick menawarkan kekuatan tekan yang setara atau bahkan melebihi batu bata konvensional.</p>
+                    <h5>Keunggulan EcoBrick:</h5>
+                    <ul>
+                        <li><strong>Ramah Lingkungan:</strong> Memanfaatkan limbah plastik yang sulit terurai, mengurangi pencemaran lingkungan.</li>
+                        <li><strong>Kuat dan Tahan Lama:</strong> Memiliki kekuatan tekan yang tinggi, tahan terhadap cuaca ekstrem, air, dan serangan rayap.</li>
+                        <li><strong>Ringan:</strong> Bobotnya lebih ringan dibandingkan batu bata biasa, memudahkan proses transportasi dan pemasangan.</li>
+                        <li><strong>Isolasi Termal dan Akustik:</strong> Memberikan isolasi panas dan suara yang lebih baik, membuat bangunan lebih nyaman dan hemat energi.</li>
+                        <li><strong>Estetika Menarik:</strong> Tersedia dalam berbagai pilihan warna dan tekstur (tergantung ketersediaan), memberikan fleksibilitas desain.</li>
+                    </ul>
+                    <h5>Aplikasi:</h5>
+                    <p>EcoBrick cocok digunakan untuk berbagai aplikasi konstruksi, seperti:</p>
+                    <ul>
+                        <li>Dinding non-struktural (partisi)</li>
+                        <li>Pagar</li>
+                        <li>Elemen lanskap (pot tanaman, bangku taman, dll.)</li>
+                        <li>Bangunan sederhana (pos jaga, gudang kecil)</li>
+                    </ul>
+                    <p>Dengan menggunakan EcoBrick, Anda tidak hanya membangun struktur fisik, tetapi juga berkontribusi pada pembangunan masa depan yang lebih hijau dan berkelanjutan.</p>
+                </div>
+                <div class="tab-pane fade p-4" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                    <h4>Spesifikasi Teknis EcoBrick</h4>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Dimensi</th>
+                                <td>20 cm x 10 cm x 5 cm (standar)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Berat</th>
+                                <td>± 1.5 kg / pcs</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kekuatan Tekan</th>
+                                <td>> 10 MPa</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Penyerapan Air</th>
+                                <td>< 5%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bahan Baku Utama</th>
+                                <td>Limbah plastik daur ulang (HDPE, LDPE, PP), pasir, bahan pengikat ramah lingkungan</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Warna</th>
+                                <td>Abu-abu (standar), warna lain tersedia berdasarkan permintaan</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Ketahanan Api</th>
+                                <td>Tahan api (tidak mudah terbakar)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Standar</th>
+                                <td>Memenuhi standar SNI untuk bata ringan non-struktural</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade p-4" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <h4>Ulasan Pelanggan</h4>
+                    <div class="reviews-summary mb-4">
+                        <div class="average-rating">
+                            <span class="rating-value">4.8</span>
+                            <span class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="total-reviews">dari 128 ulasan</span>
+                        </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewModal">Tulis Ulasan</button>
+                    </div>
+                    <div class="review-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="../img/user3.jpg" alt="Reza Rahadian" class="review-avatar">
+                                <div class="review-meta">
+                                    <h5 class="review-author">Reza Rahadian</h5>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">1 minggu yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Sangat puas dengan EcoBrick! Saya gunakan untuk membuat pagar taman, hasilnya kuat dan terlihat unik. Proses pemasangan juga lebih cepat karena ringan. Recommended!</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="../img/user1.jpg" alt="Budi Santoso" class="review-avatar">
+                                <div class="review-meta">
+                                    <h5 class="review-author">Budi Santoso</h5>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-date">2 minggu yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Produk bagus dan ramah lingkungan. Hanya saja pilihan warnanya terbatas saat saya beli. Semoga ke depan bisa lebih bervariasi.</p>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <img src="../img/user4.jpg" alt="Dian Sastro" class="review-avatar">
+                                <div class="review-meta">
+                                    <h5 class="review-author">Dian Sastro</h5>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="review-date">3 minggu yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Pengiriman cepat dan packing rapi. Batanya presisi dan mudah dipasang. Senang bisa berkontribusi mengurangi sampah plastik.</p>
+                            </div>
+                        </div>
+                        <!-- Add more reviews here -->
+                    </div>
+                    <nav aria-label="Review pagination" class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Berikutnya</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="tab-pane fade p-4" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                    <h4>Informasi Pengiriman</h4>
+                    <p>Kami menawarkan berbagai pilihan pengiriman untuk kenyamanan Anda:</p>
+                    <ul>
+                        <li><strong>Pengiriman Standar:</strong> Estimasi 3-5 hari kerja untuk wilayah Jabodetabek, 5-7 hari kerja untuk luar Jabodetabek.</li>
+                        <li><strong>Pengiriman Ekspres:</strong> Estimasi 1-2 hari kerja (tersedia untuk wilayah tertentu).</li>
+                        <li><strong>Ambil di Tempat:</strong> Anda dapat mengambil pesanan langsung di gudang kami (konfirmasi terlebih dahulu).</li>
+                    </ul>
+                    <p>Biaya pengiriman akan dihitung berdasarkan berat total pesanan dan alamat tujuan saat checkout.</p>
+                    <h4 class="mt-4">Kebijakan Pengembalian</h4>
+                    <p>Kami menerima pengembalian produk dalam kondisi berikut:</p>
+                    <ul>
+                        <li>Produk diterima dalam keadaan rusak atau cacat.</li>
+                        <li>Produk yang diterima tidak sesuai dengan pesanan.</li>
+                    </ul>
+                    <p>Pengajuan pengembalian harus dilakukan maksimal 3 hari setelah produk diterima dengan menyertakan bukti foto atau video. Silakan hubungi layanan pelanggan kami untuk proses pengembalian lebih lanjut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Produk Terkait</h2>
+                <p class="section-subtitle">Produk lain yang mungkin Anda sukai</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                    <div class="product-card">
+                        <img src="../img/product4.jpg" alt="EcoFan" class="product-img">
+                        <div class="product-body">
+                            <div class="product-category">Energi</div>
+                            <h3 class="product-title">EcoFan</h3>
+                            <p class="product-text">Kipas angin hemat energi yang menggunakan teknologi motor DC.</p>
+                            <div class="product-meta">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(56)</span>
+                                </div>
+                                <div class="product-price">Rp 275.000</div>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                            <button class="btn btn-primary add-to-cart" data-product="EcoFan">Beli</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <img src="../img/product8.jpg" alt="GreenRoof" class="product-img">
+                        <div class="product-body">
+                            <div class="product-category">Konstruksi</div>
+                            <h3 class="product-title">GreenRoof</h3>
+                            <p class="product-text">Sistem atap hijau modular yang mudah dipasang untuk pendinginan alami.</p>
+                            <div class="product-meta">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(34)</span>
+                                </div>
+                                <div class="product-price">Rp 450.000 / m²</div>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                            <button class="btn btn-primary add-to-cart" data-product="GreenRoof">Beli</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <img src="../img/product2.jpg" alt="SolarPot" class="product-img">
+                        <div class="product-body">
+                            <div class="product-category">Energi</div>
+                            <h3 class="product-title">SolarPot</h3>
+                            <p class="product-text">Pot tanaman dengan panel surya terintegrasi untuk kebutuhan listrik kecil.</p>
+                            <div class="product-meta">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(87)</span>
+                                </div>
+                                <div class="product-price">Rp 350.000</div>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                            <button class="btn btn-primary add-to-cart" data-product="SolarPot">Beli</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card">
+                        <img src="../img/product7.jpg" alt="AquaFilter" class="product-img">
+                        <div class="product-body">
+                            <div class="product-category">Konsumsi</div>
+                            <h3 class="product-title">AquaFilter</h3>
+                            <p class="product-text">Filter air portabel yang terbuat dari bahan alami untuk air bersih.</p>
+                            <div class="product-meta">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(103)</span>
+                                </div>
+                                <div class="product-price">Rp 185.000</div>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                            <button class="btn btn-primary add-to-cart" data-product="AquaFilter">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="../img/logo-white.png" alt="EcoInnovate Logo" class="footer-logo mb-3">
+                    <p class="footer-about">EcoInnovate adalah platform yang menghubungkan inovator, investor, dan konsumen untuk menciptakan solusi ramah lingkungan yang menguntungkan semua pihak.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="footer-title">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="inovasi.html">Inovasi</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="komunitas.html">Komunitas</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="footer-title">Kategori</h5>
+                    <ul class="footer-links">
+                        <li><a href="kategori.html">Energi</a></li>
+                        <li><a href="kategori.html">Konstruksi</a></li>
+                        <li><a href="kategori.html">Konsumsi</a></li>
+                        <li><a href="kategori.html">Pertanian</a></li>
+                        <li><a href="kategori.html">Transportasi</a></li>
+                        <li><a href="kategori.html">Daur Ulang</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h5 class="footer-title">Kontak</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Eco Inovasi No. 123, Jakarta, Indonesia</li>
+                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ecoinnovate.id</li>
+                    </ul>
+                    <div class="app-badges mt-3">
+                        <a href="#" class="app-badge"><img src="../img/google-play.png" alt="Google Play"></a>
+                        <a href="#" class="app-badge"><img src="../img/app-store.png" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 EcoInnovate. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reviewModalLabel">Tulis Ulasan untuk EcoBrick</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="review-form">
+                        <div class="mb-3">
+                            <label for="review-rating" class="form-label">Rating Anda:</label>
+                            <div id="review-rating" class="star-rating">
+                                <i class="far fa-star" data-value="1"></i>
+                                <i class="far fa-star" data-value="2"></i>
+                                <i class="far fa-star" data-value="3"></i>
+                                <i class="far fa-star" data-value="4"></i>
+                                <i class="far fa-star" data-value="5"></i>
+                            </div>
+                            <input type="hidden" id="rating-value" name="rating" value="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="review-text" class="form-label">Ulasan Anda:</label>
+                            <textarea class="form-control" id="review-text" name="review" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Ulasan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart-message">Keranjang belanja Anda kosong.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">Rp 0</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary w-100 checkout-btn">Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+    <script>
+        // Image Gallery
+        const mainImage = document.getElementById('main-product-image');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                mainImage.src = this.src;
+                // Remove active class from all thumbnails
+                thumbnails.forEach(t => t.classList.remove('active'));
+                // Add active class to the clicked thumbnail
+                this.classList.add('active');
+            });
+        });
+
+        // Quantity Selector
+        const quantityInput = document.querySelector('.quantity-input');
+        const minusButton = document.querySelector('.quantity-minus');
+        const plusButton = document.querySelector('.quantity-plus');
+
+        minusButton.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+        plusButton.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            let max = parseInt(quantityInput.max);
+            if (currentValue < max) {
+                quantityInput.value = currentValue + 1;
+            }
+        });
+
+        // Star Rating in Modal
+        const stars = document.querySelectorAll('#review-rating .fa-star');
+        const ratingValueInput = document.getElementById('rating-value');
+
+        stars.forEach(star => {
+            star.addEventListener('mouseover', function() {
+                resetStars();
+                const rating = parseInt(this.getAttribute('data-value'));
+                highlightStars(rating);
+            });
+
+            star.addEventListener('mouseout', function() {
+                resetStars();
+                const currentRating = parseInt(ratingValueInput.value);
+                if (currentRating > 0) {
+                    highlightStars(currentRating);
+                }
+            });
+
+            star.addEventListener('click', function() {
+                const rating = parseInt(this.getAttribute('data-value'));
+                ratingValueInput.value = rating;
+                highlightStars(rating);
+            });
+        });
+
+        function resetStars() {
+            stars.forEach(star => {
+                star.classList.remove('fas');
+                star.classList.add('far');
+            });
+        }
+
+        function highlightStars(rating) {
+            for (let i = 0; i < rating; i++) {
+                stars[i].classList.remove('far');
+                stars[i].classList.add('fas');
+            }
+        }
+
+        // Review Form Submission (Placeholder)
+        document.getElementById('review-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Ulasan Anda telah dikirim! (Simulasi)');
+            const reviewModal = bootstrap.Modal.getInstance(document.getElementById('reviewModal'));
+            reviewModal.hide();
+            this.reset();
+            ratingValueInput.value = 0;
+            resetStars();
+        });
+
+    </script>
+</body>
+</html>

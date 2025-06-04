@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - EcoInnovate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="EcoInnovate Logo" class="logo-img">
+                EcoInnovate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inovasi.html">Inovasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="komunitas.html">Komunitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <div class="ms-3 d-none d-lg-block">
+                    <a href="login.html" class="btn btn-outline-light me-2">Masuk</a>
+                    <a href="register.html" class="btn btn-primary">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-title">Produk Ramah Lingkungan</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../index.html">Beranda</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Produk</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Filter Section -->
+    <section class="products-filter-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="filter-sidebar">
+                        <h3 class="filter-title">Filter Produk</h3>
+                        <div class="filter-group">
+                            <h4>Kategori</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="category-all" checked>
+                                <label class="form-check-label" for="category-all">
+                                    Semua Kategori
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="category-energy">
+                                <label class="form-check-label" for="category-energy">
+                                    Energi
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="category-construction">
+                                <label class="form-check-label" for="category-construction">
+                                    Konstruksi
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="category-consumption">
+                                <label class="form-check-label" for="category-consumption">
+                                    Konsumsi
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="category-agriculture">
+                                <label class="form-check-label" for="category-agriculture">
+                                    Pertanian
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="category-transport">
+                                <label class="form-check-label" for="category-transport">
+                                    Transportasi
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Harga</h4>
+                            <div class="price-range">
+                                <div class="range-slider">
+                                    <input type="range" class="form-range" min="0" max="1000000" step="10000" id="price-range">
+                                </div>
+                                <div class="price-inputs">
+                                    <div class="price-input">
+                                        <label for="min-price">Min</label>
+                                        <input type="text" id="min-price" class="form-control" value="0">
+                                    </div>
+                                    <div class="price-input">
+                                        <label for="max-price">Max</label>
+                                        <input type="text" id="max-price" class="form-control" value="1000000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Rating</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rating-5">
+                                <label class="form-check-label" for="rating-5">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rating-4">
+                                <label class="form-check-label" for="rating-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    & Up
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rating-3">
+                                <label class="form-check-label" for="rating-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    & Up
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100 mt-3">Terapkan Filter</button>
+                        <button class="btn btn-outline-secondary w-100 mt-2">Reset Filter</button>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="products-header mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="products-title">Semua Produk</h2>
+                                <p class="products-count">Menampilkan 12 dari 85 produk</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="products-sort">
+                                    <select class="form-select">
+                                        <option selected>Urutkan Berdasarkan</option>
+                                        <option value="popular">Popularitas</option>
+                                        <option value="newest">Terbaru</option>
+                                        <option value="price-low">Harga: Rendah ke Tinggi</option>
+                                        <option value="price-high">Harga: Tinggi ke Rendah</option>
+                                        <option value="rating">Rating</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                            <div class="product-card">
+                                <div class="product-badge">Terlaris</div>
+                                <img src="../img/product1.jpg" alt="EcoBrick" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Konstruksi</div>
+                                    <h3 class="product-title">EcoBrick</h3>
+                                    <p class="product-text">Batu bata yang terbuat dari limbah plastik dan bahan daur ulang lainnya, lebih kuat dari batu bata konvensional.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>(128)</span>
+                                        </div>
+                                        <div class="product-price">Rp 15.000 / pcs</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="EcoBrick">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-card">
+                                <img src="../img/product2.jpg" alt="SolarPot" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Energi</div>
+                                    <h3 class="product-title">SolarPot</h3>
+                                    <p class="product-text">Pot tanaman dengan panel surya terintegrasi yang dapat menghasilkan listrik untuk kebutuhan rumah tangga kecil.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(87)</span>
+                                        </div>
+                                        <div class="product-price">Rp 350.000</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="SolarPot">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-card">
+                                <div class="product-badge product-badge-new">Baru</div>
+                                <img src="../img/product3.jpg" alt="BambuStraw" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Konsumsi</div>
+                                    <h3 class="product-title">BambuStraw</h3>
+                                    <p class="product-text">Sedotan ramah lingkungan dari bambu yang dapat digunakan berulang kali dan biodegradable.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>(42)</span>
+                                        </div>
+                                        <div class="product-price">Rp 25.000 / set</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="BambuStraw">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                            <div class="product-card">
+                                <img src="../img/product4.jpg" alt="EcoFan" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Energi</div>
+                                    <h3 class="product-title">EcoFan</h3>
+                                    <p class="product-text">Kipas angin hemat energi yang menggunakan teknologi motor DC dan dapat diisi ulang dengan panel surya.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(56)</span>
+                                        </div>
+                                        <div class="product-price">Rp 275.000</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="EcoFan">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-card">
+                                <img src="../img/product5.jpg" alt="BioBag" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Konsumsi</div>
+                                    <h3 class="product-title">BioBag</h3>
+                                    <p class="product-text">Kantong belanja yang terbuat dari bahan organik dan dapat terurai dalam waktu 3 bulan di tanah.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>(92)</span>
+                                        </div>
+                                        <div class="product-price">Rp 5.000 / pcs</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="BioBag">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-card">
+                                <img src="../img/product1.jpg" alt="EcoLight" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Energi</div>
+                                    <h3 class="product-title">EcoLight</h3>
+                                    <p class="product-text">Lampu LED hemat energi dengan sensor gerak dan cahaya yang menyala otomatis saat dibutuhkan.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(78)</span>
+                                        </div>
+                                        <div class="product-price">Rp 125.000</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="EcoLight">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                            <div class="product-card">
+                                <img src="../img/product2.jpg" alt="AquaFilter" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Konsumsi</div>
+                                    <h3 class="product-title">AquaFilter</h3>
+                                    <p class="product-text">Filter air portabel yang terbuat dari bahan alami dan dapat membersihkan air dari berbagai kontaminan.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>(103)</span>
+                                        </div>
+                                        <div class="product-price">Rp 185.000</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="AquaFilter">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-card">
+                                <div class="product-badge product-badge-new">Baru</div>
+                                <img src="../img/product3.jpg" alt="GreenRoof" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Konstruksi</div>
+                                    <h3 class="product-title">GreenRoof</h3>
+                                    <p class="product-text">Sistem atap hijau modular yang mudah dipasang dan membantu mengurangi suhu dalam ruangan.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(34)</span>
+                                        </div>
+                                        <div class="product-price">Rp 450.000 / m²</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="GreenRoof">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-card">
+                                <img src="../img/product4.jpg" alt="EcoPaint" class="product-img">
+                                <div class="product-body">
+                                    <div class="product-category">Konstruksi</div>
+                                    <h3 class="product-title">EcoPaint</h3>
+                                    <p class="product-text">Cat dinding ramah lingkungan tanpa VOC yang terbuat dari bahan alami dan aman untuk kesehatan.</p>
+                                    <div class="product-meta">
+                                        <div class="product-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>(67)</span>
+                                        </div>
+                                        <div class="product-price">Rp 85.000 / liter</div>
+                                    </div>
+                                </div>
+                                <div class="product-footer">
+                                    <a href="produk-detail.html" class="btn btn-outline-primary">Detail</a>
+                                    <button class="btn btn-primary add-to-cart" data-product="EcoPaint">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation" class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Tetap Terhubung</h2>
+                    <p class="section-subtitle mb-4">Dapatkan update terbaru tentang inovasi ramah lingkungan dan produk baru</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Alamat Email Anda" id="newsletter-email" required>
+                            <button class="btn btn-primary" type="submit" id="subscribe-btn">Berlangganan</button>
+                        </div>
+                        <div class="form-check mt-3 text-start">
+                            <input class="form-check-input" type="checkbox" id="privacy-check" required>
+                            <label class="form-check-label" for="privacy-check">
+                                Saya setuju dengan <a href="privacy.html">Kebijakan Privasi</a>
+                            </label>
+                        </div>
+                    </form>
+                    <div id="newsletter-message" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="../img/logo-white.png" alt="EcoInnovate Logo" class="footer-logo mb-3">
+                    <p class="footer-about">EcoInnovate adalah platform yang menghubungkan inovator, investor, dan konsumen untuk menciptakan solusi ramah lingkungan yang menguntungkan semua pihak.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="footer-title">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="inovasi.html">Inovasi</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="komunitas.html">Komunitas</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="footer-title">Kategori</h5>
+                    <ul class="footer-links">
+                        <li><a href="kategori.html">Energi</a></li>
+                        <li><a href="kategori.html">Konstruksi</a></li>
+                        <li><a href="kategori.html">Konsumsi</a></li>
+                        <li><a href="kategori.html">Pertanian</a></li>
+                        <li><a href="kategori.html">Transportasi</a></li>
+                        <li><a href="kategori.html">Daur Ulang</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h5 class="footer-title">Kontak</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Eco Inovasi No. 123, Jakarta, Indonesia</li>
+                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ecoinnovate.id</li>
+                    </ul>
+                    <div class="app-badges mt-3">
+                        <a href="#" class="app-badge"><img src="../img/google-play.png" alt="Google Play"></a>
+                        <a href="#" class="app-badge"><img src="../img/app-store.png" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 EcoInnovate. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart-message">Keranjang belanja Anda kosong.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">Rp 0</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary w-100 checkout-btn">Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

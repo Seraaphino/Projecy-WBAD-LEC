@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - EcoInnovate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="EcoInnovate Logo" class="logo-img">
+                EcoInnovate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inovasi.html">Inovasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="komunitas.html">Komunitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <div class="ms-3 d-none d-lg-block">
+                    <a href="login.html" class="btn btn-outline-light me-2">Masuk</a>
+                    <a href="register.html" class="btn btn-primary">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-title">Hubungi Kami</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../index.html">Beranda</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Kontak</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Alamat</h3>
+                        <p>Jl. Eco Inovasi No. 123<br>Jakarta Selatan, 12345<br>Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Telepon</h3>
+                        <p>+62 123 4567 890<br>+62 098 7654 321</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@ecoinnovate.id<br>support@ecoinnovate.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="section-title">Kirim Pesan</h2>
+                    <p class="mb-4">Punya pertanyaan, saran, atau ingin berkolaborasi dengan kami? Jangan ragu untuk menghubungi kami melalui formulir di bawah ini.</p>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Nama Lengkap" class="form-control" id="name" required>
+                                <br>
+                                <input type="email" name="Email" placeholder="Email" class="form-control" id="Email" required>
+                                <br>
+                                <input type="phone" name="Phone" placeholder="Nomor Telepon" class="form-control" id="phone" required>
+                                <br>
+                                <input type="subjek" name="Subjek" placeholder="Subjek" class="form-control" id="subjek" required>
+                                <br>
+                                <textarea class="form-control" name="Message" id="idea-description" rows="5" placeholder="Masukan Pesan Anda" required></textarea>
+                                <div class="form-text">Masukan pesan yang ingin Anda sampaikan</div>
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                    <div id="contact-form-message" class="mt-3"></div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-container">
+                        <h2 class="section-title">Lokasi Kami</h2>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.29248624906!2d106.7891541582031!3d-6.229728099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1653896234567!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="office-hours mt-4">
+                            <h3>Jam Operasional</h3>
+                            <ul class="hours-list">
+                                <li>
+                                    <span class="day">Senin - Jumat:</span>
+                                    <span class="hours">08:00 - 17:00 WIB</span>
+                                </li>
+                                <li>
+                                    <span class="day">Sabtu:</span>
+                                    <span class="hours">09:00 - 14:00 WIB</span>
+                                </li>
+                                <li>
+                                    <span class="day">Minggu & Hari Libur:</span>
+                                    <span class="hours">Tutup</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Pertanyaan Umum</h2>
+                <p class="section-subtitle">Jawaban untuk pertanyaan yang sering diajukan</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Apa itu EcoInnovate?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    EcoInnovate adalah platform yang menghubungkan inovator, investor, dan konsumen untuk menciptakan solusi ramah lingkungan yang menguntungkan semua pihak. Kami membantu mengubah ide menjadi produk yang dapat dipasarkan dan memberikan dampak positif bagi lingkungan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Bagaimana cara bergabung dengan EcoInnovate?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Untuk bergabung dengan EcoInnovate, Anda dapat mendaftar melalui halaman <a href="register.html">Daftar</a> di website kami. Setelah mendaftar, Anda dapat mengakses berbagai fitur seperti forum diskusi, marketplace, dan program inovasi sesuai dengan peran Anda sebagai inovator, investor, atau konsumen.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Bagaimana cara mengajukan ide inovasi?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Untuk mengajukan ide inovasi, Anda perlu mendaftar sebagai inovator di platform kami. Setelah itu, Anda dapat mengakses halaman <a href="inovasi.html">Inovasi</a> dan mengisi formulir pengajuan ide. Tim kami akan meninjau ide Anda dan memberikan umpan balik dalam waktu 7 hari kerja.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Bagaimana cara menjual produk di marketplace EcoInnovate?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Untuk menjual produk di marketplace EcoInnovate, Anda perlu mendaftar sebagai penjual melalui halaman <a href="become-seller.html">Daftar Sebagai Penjual</a>. Setelah verifikasi, Anda dapat mengunggah produk ramah lingkungan Anda dan mulai menjual kepada komunitas kami yang peduli lingkungan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Apakah ada biaya untuk bergabung dengan EcoInnovate?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Pendaftaran dasar di EcoInnovate adalah gratis. Namun, untuk fitur premium seperti akses ke jaringan investor, program inkubasi, dan fitur penjual lanjutan, kami menerapkan biaya berlangganan. Silakan lihat halaman <a href="pricing.html">Harga</a> untuk informasi lebih lanjut.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <p>Masih punya pertanyaan? Jangan ragu untuk menghubungi kami.</p>
+                <a href="#" class="btn btn-outline-primary">Lihat Semua FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Tim Kami</h2>
+                <p class="section-subtitle">Orang-orang hebat di balik EcoInnovate</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="../img/team1.jpg" alt="Seraphino">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-body">
+                            <h3 class="team-name">Seraphino</h3>
+                            <p class="team-position">CEO & Founder</p>
+                            <p class="team-bio">Pengusaha sosial dengan pengalaman 15 tahun di bidang teknologi dan lingkungan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="../img/team2.jpg" alt="Ramti Raj">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-body">
+                            <h3 class="team-name">Ramti Raj</h3>
+                            <p class="team-position">COO</p>
+                            <p class="team-bio">Ahli operasional dengan latar belakang di perusahaan teknologi global.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="../img/team3.jpg" alt="Lovell Caroll">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-body">
+                            <h3 class="team-name">Lovell Caroll</h3>
+                            <p class="team-position">CTO</p>
+                            <p class="team-bio">Insinyur perangkat lunak dengan spesialisasi di platform marketplace dan komunitas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="../img/team4.jpg" alt="Jonathan Alexander">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-body">
+                            <h3 class="team-name">Jonathan Alexander</h3>
+                            <p class="team-position">Head of Innovation</p>
+                            <p class="team-bio">Ahli inovasi dengan pengalaman di berbagai proyek ramah lingkungan internasional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="../img/team4.jpg" alt="Vadhel Assyidhiqi">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-body">
+                            <h3 class="team-name">Vadhel Assyidhiqi</h3>
+                            <p class="team-position">Head of Development</p>
+                            <p class="team-bio">Ahli inovasi dengan pengalaman di berbagai proyek ramah lingkungan internasional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Tetap Terhubung</h2>
+                    <p class="section-subtitle mb-4">Dapatkan update terbaru tentang inovasi ramah lingkungan dan produk baru</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Alamat Email Anda" id="newsletter-email" required>
+                            <button class="btn btn-primary" type="submit" id="subscribe-btn">Berlangganan</button>
+                        </div>
+                        <div class="form-check mt-3 text-start">
+                            <input class="form-check-input" type="checkbox" id="privacy-check" required>
+                            <label class="form-check-label" for="privacy-check">
+                                Saya setuju dengan <a href="privacy.html">Kebijakan Privasi</a>
+                            </label>
+                        </div>
+                    </form>
+                    <div id="newsletter-message" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="../img/logo-white.png" alt="EcoInnovate Logo" class="footer-logo mb-3">
+                    <p class="footer-about">EcoInnovate adalah platform yang menghubungkan inovator, investor, dan konsumen untuk menciptakan solusi ramah lingkungan yang menguntungkan semua pihak.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="footer-title">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="inovasi.html">Inovasi</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="komunitas.html">Komunitas</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="footer-title">Kategori</h5>
+                    <ul class="footer-links">
+                        <li><a href="kategori.html">Energi</a></li>
+                        <li><a href="kategori.html">Konstruksi</a></li>
+                        <li><a href="kategori.html">Konsumsi</a></li>
+                        <li><a href="kategori.html">Pertanian</a></li>
+                        <li><a href="kategori.html">Transportasi</a></li>
+                        <li><a href="kategori.html">Daur Ulang</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h5 class="footer-title">Kontak</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Eco Inovasi No. 123, Jakarta, Indonesia</li>
+                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ecoinnovate.id</li>
+                    </ul>
+                    <div class="app-badges mt-3">
+                        <a href="#" class="app-badge"><img src="../img/google-play.png" alt="Google Play"></a>
+                        <a href="#" class="app-badge"><img src="../img/app-store.png" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row footer-bottom">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 EcoInnovate. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart-message">Keranjang belanja Anda kosong.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">Rp 0</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary w-100 checkout-btn">Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
